@@ -12,6 +12,36 @@
     />
     <title>Todo List</title>
   </head>
+  <style>
+    .btn-done{
+      background-color: green;
+      margin: 0 10px;
+      border: 1px solid green;
+      color: #fff;
+    }
+    .btn-done:hover{
+      color: green;
+      background-color: #fff;
+    }
+    .empty{
+      margin: 10px;
+      display: none;
+    }
+    .list-group-button{
+      border: 2px solid blue;
+      border-radius: 5px;
+      padding: 5px 10px;
+      color: blue;
+      background-color: transparent;
+      margin-right: 10px;
+    }
+    .list-group-item{
+      border: 5px solid transparent;
+    }
+    .complete{
+      border: 5px solid green;
+    }
+  </style>
   <body>
     <div class="form-section mt-5">
       <div class="container">
@@ -47,6 +77,13 @@
     </div>
     <div class="tasks-list-section mt-5">
       <div class="container">
+        <div class="list-group__select">
+          <button class="list-group-button list-group-button-notcompleted">Показать невыполненные задачи</button>
+          <button class="list-group-button list-group-button-all">Показать все</button>
+        </div>
+        <p class="empty">
+          Tasks list is Emtpy :( <br> Please add something
+        </p>
         <ul class="list-group">
         </ul>
       </div>
